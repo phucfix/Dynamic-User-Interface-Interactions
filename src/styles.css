@@ -67,3 +67,103 @@ h6 {
 html {
   font-family: "Arial", sans-serif;
 }
+
+.section-title {
+  margin: 20px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-button {
+  height: 50px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  margin: 20px auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dropdown-button:hover {
+  background-color: red;
+}
+
+ul.dropdown-item {
+  width: 200px;
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 50px);
+  display: none;
+  list-style-type: none;
+}
+
+ul.dropdown-item li {
+  background-color: black;
+  color: white;
+}
+
+ul.dropdown-item.visible {
+  display: block;
+  z-index: 1;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 60%;
+  margin: 10px auto;
+}
+
+img {
+  width: 100%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-size: clamp(14px, 7vw, 40px);
+  transform: translateY(-50%);
+  padding: 10px;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.indicators {
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.dot.active, .dot:hover {
+  background-color: #717171;
+}
